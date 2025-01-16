@@ -1,0 +1,174 @@
+/*  */ /* Media Queries  */ /*  */
+
+/* Laptop */
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 90%;
+  }
+
+  .info-profile {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .tentang-sekolah,
+  .visi-misi,
+  .kepsek {
+    width: 100%; /* Untuk perangkat kecil, elemen jadi penuh */
+  }
+
+  .info-profile {
+    justify-content: center; /* Konten di tengah pada perangkat kecil */
+  }
+
+  .target-svg {
+    fill: var(--putih);
+    height: 3rem;
+    width: auto;
+  }
+}
+
+/* Hamburger Menu start Muncul */
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 75%;
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  nav {
+    padding: 24px 5%;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 0px 24px 15px rgba(0, 0, 0, 0.06);
+    z-index: 100;
+  }
+
+  .nav-logo,
+  .nav-logo.sticky {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .nav-logo img,
+  .nav-logo.sticky img {
+    width: auto;
+    height: 53px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 10px;
+    z-index: 10;
+  }
+
+  .nav-text .nav-text1 {
+    font-size: 21px;
+    font-weight: 700;
+    z-index: 10;
+  }
+
+  .nav-text .nav-text2 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    z-index: 10;
+  }
+
+  .nav-extra,
+  .nav-extra.sticky {
+    display: none;
+  }
+
+  .menu-bar,
+  .menu-bar.sticky {
+    display: inline-block;
+    align-items: center;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0px 24px 15px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-nav,
+  .nav-nav.sticky {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: -100%;
+    width: 40rem;
+    height: 100vh;
+    background: var(--putih);
+    border-radius: 0px;
+    /* border-top-left-radius: 50px; */
+    border-bottom-left-radius: 50px;
+    margin: 0;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-nav.active {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    right: 0;
+    background: var(--putih);
+    width: 40rem;
+    height: 100vh;
+    border-radius: 0px;
+    /* border-top-left-radius: 50px; */
+    border-bottom-left-radius: 50px;
+    margin: 0;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .nav-nav,
+  .nav-nav.sticky .nav-nav a {
+    align-items: row;
+    justify-content: left;
+  }
+}
+
+/* HP JAMAN NOW */
+@media (max-width: 1080px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
