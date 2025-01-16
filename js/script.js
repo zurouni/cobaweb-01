@@ -39,6 +39,12 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+// Tablet Menu Bar
+const menubar = document.querySelector(".nav-nav");
+document.querySelector("#hamburger-menu").onclick = () => {
+  menubar.classList.toggle("active");
+};
+
 // Img Home
 
 let currentIndex = 0;
